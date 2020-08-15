@@ -5,79 +5,101 @@
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body style="height:1500px">
-
-<!-- Jumbotron -->
-<div class="jumbotron text-center" style="margin-bottom:0">
-	<h1>COMING SOON</h1>
-	<p>Oh yeah. It's all coming together.</p>
-</div>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- Navigation Bar -->
-<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark justify-content-between">
+<nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark ">
 	<div class="container-fluid">
 		<!-- Brand (Logo) -->
-		<a class="navbar-brand" href="#">Juan's Dirty Laundry</a>
+		<a class="navbar-brand" href="#home">Juan's Dirty Laundry</a>
 		
 		<!-- Toggle Navigation Bar -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar" >
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
+					<a class="nav-link" href="#aboutMe">About Me</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link 2</a>
-				</li>
-				
-				<!-- Dropdown Menu -->
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-						Dropdown 
-					</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Link 1</a>
-						<a class="dropdown-item" href="#">Link 2</a>
-					</div>
+					<a class="nav-link" href="#projects">Projects</a>
 				</li>
 		
 			</ul>
 		</div>
-		
-		<!-- Search Bar -->
-		<form class="form-inline" action="#">
-					<input class="form-control mr-sm-2" type="text" placeholder="Reason to live">
-					<button class="btn btn-outline-info" type="submit">Search</button>
-		</form>
 	</div>
 </nav>
 
+<div class="jumbotron text-center img-center" style="margin-bottom:0">
+	<img src="D:\Wallpapers\baby_deku.jpg" height="200px" width="200px" class="rounded-circle" alt="self">
+	<h1>Juan Garcia</h1>
+	<p>Oh yeah. It's all coming together.</p>
+	<div class="container">
+		<i class="fa fa-github"> Git | </i>
+		<i class="fa fa-linkedin-square"> Linkedin | </i>
+		<i class="fa fa-google"> juandamgarcia@gmail.com</i>
+	</div>
+</div>
 
-<div class="container" style="margin-top:30px">
+<div class="container-fluid " id="aboutMe">
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="D:\Wallpapers\baby_deku.jpg" class="img-fluid" alt="long beach">				
+			<h4 >CSULB Graduate</h4>
+			<p> Proud graduate from California State University, Long Beach. Graduation date: May 16, 2020<p>
+		</div>
+		<div class="col-sm-4">				
+			<h4>Passion for Computer Science</h4>
+			<p>Achieved my Bachelors of Science in Computer Science. 
+				This field was an obvious choice for me since I have always been interested in technology from a very young age.
+				The tech world is still in infancy and I truly believe we have only begun to grasp its full potential. <p>
+			<img src="D:\Wallpapers\baby_deku.jpg" class="img-fluid" alt="long beach">
+		</div>
+		<div class="col-sm-4">
+			<img src="D:\Wallpapers\baby_deku.jpg" class="img-fluid" alt="long beach">				
+			<h4 >Platinumed Bloodborne</h4>
+			<p>Avid gamer with years of experience in the critically acclaimed Call of Duty series since COD4:Modern Warfare. 
+				If you need someone to carry you through the pits of Nam, I'm that guy.<p>
+		</div>
+	</div>	
+</div>
+
+<div class="container-fluid border p-3"  id="projects">
 	<div class="row">
 		<div class="col-sm-2">
 			<ul class="nav nav-pills flex-column">
 				<li class="nav-item">
-					<a class="nav-link active" href="#">Project 1</a>
+					<a class="nav-link active" data-toggle="pill" href="#intro">Introduction</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Project 2</a>
+					<a class="nav-link" data-toggle="pill" href="#project1">Project 1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="pill" href="#project2">Project 2</a>
 				</li>
 			</ul>
 		</div>
 		
 		<div class="col-sm-10">
-			<h2>This is only the beginning....</h2>
-			<p>If the world won't take me, then I'll force them to.</p>
+			<div class="tab-content">
+				<div class="tab-pane container active" id="intro">
+					<h2>A Collection of My Projects</h2>
+						<p>These are some of my currently ongoing/completed projects with tags for the skills required for each project i.e C++, Java, Networking, Security, API, etc.
+							Feel free to sort by specific tags using the "Sort" dropdown menu.</p>
+				</div>		
+			</div>
 		</div>
+	</div>
+	
 </div>
+
 
 </body>
 </html>
